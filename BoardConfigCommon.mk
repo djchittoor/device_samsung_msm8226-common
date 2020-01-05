@@ -71,7 +71,13 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
 # Filesystem
+BOARD_ROOT_EXTRA_SYMLINKS := /data/tombstones:/tombstones
 TARGET_FS_CONFIG_GEN := device/samsung/msm8226-common/config.fs
+BOARD_ROOT_EXTRA_FOLDERS := \
+    firmware-modem \
+    firmware \
+    efs \
+    persist
 
 # HIDL
 DEVICE_MANIFEST_FILE := device/samsung/msm8226-common/manifest.xml
