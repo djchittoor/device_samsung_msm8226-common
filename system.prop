@@ -1,2 +1,5 @@
+# fastbootd
+ro.fastbootd.available=true
+
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
