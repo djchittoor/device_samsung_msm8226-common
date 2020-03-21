@@ -88,6 +88,10 @@ TARGET_FS_CONFIG_GEN := device/samsung/msm8226-common/config.fs
 DEVICE_MANIFEST_FILE := device/samsung/msm8226-common/manifest.xml
 DEVICE_MATRIX_FILE := device/samsung/msm8226-common/compatibility_matrix.xml
 
+# Kernel Configs
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
+
 # Keymaster
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
 
