@@ -121,6 +121,9 @@ on post-fs-data
     restorecon /efs/wifi/.mac.info
     chmod 0664 /efs/wifi/.mac.cob
 
+    # Make WCNSS_qcom_cfg.ini available in /data/vendor
+    symlink /data/misc/wifi/WCNSS_qcom_cfg.ini /data/vendor/wifi/WCNSS_qcom_cfg.ini
+
     # Create directory used by audio subsystem
     mkdir /data/misc/audio 0770 audio audio
     
