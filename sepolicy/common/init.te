@@ -6,6 +6,7 @@ selinux_check_context(init)
 
 allow init sysfs_net:file { open write };
 allow init wcnss_device:chr_file write;
+allow init sysfs:file setattr;
 
 allow init {
     sysfs_iio
