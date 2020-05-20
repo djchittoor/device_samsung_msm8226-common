@@ -67,15 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM
     
 PRODUCT_PROPERTY_OVERRIDES += \
-    pm.dexopt.shared=quicken    
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=16m \
-    dalvik.vm.heapgrowthlimit=192m \
-    dalvik.vm.heapsize=256m \
-    dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapmaxfree=8m    
+    pm.dexopt.shared=quicken
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=4 \
@@ -85,7 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=4 \
     dalvik.vm.image-dex2oat-threads=4 \
     dalvik.vm.verify-bytecode=false \
-    persist.sys.purgeable_assets=1
+    persist.sys.purgeable_assets=1 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
