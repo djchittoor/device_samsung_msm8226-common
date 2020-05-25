@@ -13,6 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Always preopt extracted APKs to prevent extracting out of the APK
+# for gms modules.
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
+# System Server
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/msm8226-common/overlay \
