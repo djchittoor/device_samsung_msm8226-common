@@ -24,6 +24,8 @@ persist.graphics.vulkan.disable=true
 
 # Media
 debug.stagefright.ccodec=0
+debug.stagefright.omx_default_rank=0
+debug.stagefright.omx_default_rank.sw-audio=1
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
@@ -42,6 +44,3 @@ ril.subscription.types=NV,RUIM
 
 # Time
 persist.timed.enable=true
-
-
-
