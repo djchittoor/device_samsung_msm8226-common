@@ -71,7 +71,11 @@ on fs
     
 on post-fs    
     # Allow writing to the kernel trace log.
-    chmod 0222 /sys/kernel/debug/tracing/trace_marker    
+    chmod 0222 /sys/kernel/debug/tracing/trace_marker
+    
+    # avoid USB crash
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
 
 on post-fs-data
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
