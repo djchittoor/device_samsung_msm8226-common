@@ -104,9 +104,6 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 # Netd
 TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
-# Power
-TARGET_USES_INTERACTION_BOOST := true
-
 # Properties
 TARGET_SYSTEM_PROP += device/samsung/msm8226-common/system.prop
 
