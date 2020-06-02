@@ -1,0 +1,1 @@
+allow untrusted_app media_data_file:dir getattr;
