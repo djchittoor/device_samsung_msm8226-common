@@ -1,0 +1,1 @@
+allow platform_app media_data_file:dir search;
